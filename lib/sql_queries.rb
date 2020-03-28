@@ -19,10 +19,10 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT COUNT(`column`) AS `value_occurrence` 
-    FROM     `my_table`
-    GROUP BY `column`
-    ORDER BY `value_occurrence` DESC
+  "SELECT color COUNT(color) AS value_occurrence
+    FROM     bears
+    GROUP BY color
+    ORDER BY value_occurrence DESC
     LIMIT    1;"
 end
 
